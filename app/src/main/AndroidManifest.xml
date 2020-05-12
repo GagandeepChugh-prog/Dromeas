@@ -13,11 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".importFromGallery"></activity>
+        <activity android:name=".CodeRunOutput"></activity>
+        <activity android:name=".importFromGallery" />
         <activity android:name=".importFromNotePad" />
         <activity android:name=".Editor" />
         <activity android:name=".ViewResultForCamera" />
-        <activity android:name=".CameraOption"/>
+        <activity android:name=".CameraOption" />
         <activity android:name=".CommonLanding" />
         <activity android:name=".LanguageOption" />
         <activity android:name=".MainActivity">

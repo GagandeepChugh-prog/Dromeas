@@ -28,7 +28,7 @@ public class ViewResultForCamera extends AppCompatActivity {
 
     String code="";
 
-    Button openTextEditor;
+    Button openTextEditor,runCode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,7 @@ public class ViewResultForCamera extends AppCompatActivity {
         mPreview=findViewById(R.id.mPreview);
         codePreview=findViewById(R.id.codePreview);
         openTextEditor=findViewById(R.id.openTextEditor);
+        runCode=findViewById(R.id.run);
 
         final Intent intent=getIntent();
         String image= intent.getStringExtra("uri");
@@ -74,6 +75,14 @@ public class ViewResultForCamera extends AppCompatActivity {
                 Intent intent2=new Intent(ViewResultForCamera.this,Editor.class);
                 intent2.putExtra("Code",code);
                 startActivity(intent2);
+            }
+        });
+        runCode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1=new Intent(ViewResultForCamera.this,CodeRunOutput.class);
+                intent1.putExtra("Code",code);
+                startActivity(intent1);
             }
         });
 
