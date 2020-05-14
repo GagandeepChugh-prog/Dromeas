@@ -37,6 +37,7 @@ public class newCodeRunOutput extends AppCompatActivity {
 
         Intent intent=getIntent();
         String num=intent.getStringExtra("language");
+        String code=intent.getStringExtra("code");
 
         switch (num){
             case "1":
