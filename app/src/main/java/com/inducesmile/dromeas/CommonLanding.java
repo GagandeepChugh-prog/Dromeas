@@ -17,6 +17,9 @@ public class CommonLanding extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common_landing);
 
+        Intent intent=getIntent();
+        final String lang=intent.getStringExtra("language");
+
 
         notepad= findViewById(R.id.notepad);
         camera= findViewById(R.id.camera);
@@ -26,6 +29,7 @@ public class CommonLanding extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CommonLanding.this,importFromNotePad.class);
+                intent.putExtra("language",lang);
                 startActivity(intent);
             }
         });
@@ -34,6 +38,7 @@ public class CommonLanding extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CommonLanding.this,newCameraOption.class);
+                intent.putExtra("language",lang);
                 startActivity(intent);
             }
         });
@@ -43,6 +48,7 @@ public class CommonLanding extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CommonLanding.this,importFromGallery.class);
+                intent.putExtra("language",lang);
                 startActivity(intent);
             }
         });

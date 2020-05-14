@@ -24,6 +24,7 @@ public class LanguageOption extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LanguageOption.this,CommonLanding.class);
+                intent.putExtra("language","1");
                 startActivity(intent);
             }
         });
@@ -32,6 +33,7 @@ public class LanguageOption extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LanguageOption.this,CommonLanding.class);
+                intent.putExtra("language","2");
                 startActivity(intent);
             }
         });
@@ -40,6 +42,7 @@ public class LanguageOption extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LanguageOption.this,CommonLanding.class);
+                intent.putExtra("language","3");
                 startActivity(intent);
             }
         });

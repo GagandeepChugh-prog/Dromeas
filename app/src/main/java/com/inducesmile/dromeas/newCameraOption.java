@@ -21,6 +21,9 @@ public class newCameraOption extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_camera_option);
 
+        Intent intent=getIntent();
+        final String lang=intent.getStringExtra("language");
+
         openCamera=findViewById(R.id.openCamera);
         runCode=findViewById(R.id.runCode);
         viewCode=findViewById(R.id.viewCode);
@@ -40,7 +43,8 @@ public class newCameraOption extends AppCompatActivity {
         runCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(newCameraOption.this,openCameraActivity.class);
+                Intent intent=new Intent(newCameraOption.this,newCodeRunOutput.class);
+                intent.putExtra("language",lang);
                 intent.putExtra("code",code);
                 startActivity(intent);
             }
