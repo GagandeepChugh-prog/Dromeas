@@ -18,7 +18,7 @@ public class Editor extends AppCompatActivity {
         codeEditor=findViewById(R.id.codeEditor);
 
         Intent intent=getIntent();
-        code=intent.getStringExtra("Code");
+        code=intent.getStringExtra("code");
 
         codeEditor.setText(code);
 

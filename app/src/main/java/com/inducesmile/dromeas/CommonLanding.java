@@ -33,7 +33,7 @@ public class CommonLanding extends AppCompatActivity {
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CommonLanding.this,CameraOption.class);
+                Intent intent = new Intent(CommonLanding.this,newCameraOption.class);
                 startActivity(intent);
             }
         });
