@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -56,7 +57,7 @@ public class newCameraOption extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(newCameraOption.this,Editor.class);
                 intent.putExtra("code",code);
-                startActivity(intent);
+                startActivityForResult(intent,3);
             }
         });
 
@@ -76,6 +77,7 @@ public class newCameraOption extends AppCompatActivity {
                         openCamera.setText("Add More Photos");
                         code=code+cx;
                         viewCode.setEnabled(true);
+
                     }
                     else{
                         Toast.makeText(getApplicationContext(),"No code detected",Toast.LENGTH_LONG).show();
@@ -84,6 +86,17 @@ public class newCameraOption extends AppCompatActivity {
                 }
                 break;
             }
+
+            case 3:{
+                if (resultCode == Editor.RESULT_OK) {
+                    // TODO Extract the data returned from the child Activity.
+                    String returnValue = data.getStringExtra("accessedData");
+                    code =returnValue;
+                    codepreview.setText(returnValue);
+                }
+                break;
+            }
+
         }
     }
 }

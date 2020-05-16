@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/codeEditor"
         android:layout_width="wrap_content"
-        android:layout_height="671dp"
+        android:layout_height="732dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -21,10 +21,24 @@
         android:layout_marginTop="33dp"
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="81dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/saveCode"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="776dp"
+        android:text="Save Code"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
 
 
 </RelativeLayout>
