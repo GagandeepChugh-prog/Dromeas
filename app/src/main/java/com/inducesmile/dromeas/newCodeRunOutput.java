@@ -21,6 +21,12 @@ import java.io.IOException;
 
 public class newCodeRunOutput extends AppCompatActivity {
 
+    public static final MediaType JSON
+            = MediaType.parse("application/json; charset=utf-8");
+
+
+    OkHttpClient client = new OkHttpClient();
+
     Button postCode;
 
     String changeURL="a5cdce3d.ngrok.io";
@@ -28,7 +34,7 @@ public class newCodeRunOutput extends AppCompatActivity {
     TextView result;
 
     String postRequestURL="";
-    String sxx;
+    //String sxx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +46,10 @@ public class newCodeRunOutput extends AppCompatActivity {
 
         Intent intent=getIntent();
         String num=intent.getStringExtra("language");
-        String code=intent.getStringExtra("code");
-        JsonConverter sa=new JsonConverter(code);
-        JSONObject sx= sa.convert();
-        sxx= sx.toString();
+        final String code=intent.getStringExtra("code");
+       // JsonConverter sa=new JsonConverter(code);
+       // JSONObject sx= sa.convert();
+      //  sxx= sx.toString();
 
 
         switch (num){
@@ -72,22 +78,19 @@ public class newCodeRunOutput extends AppCompatActivity {
                     @Override
                     public void run() {
                         try  {
-                            OkHttpClient client = new OkHttpClient();
-                            MediaType mediaType = MediaType.parse("application/json");
-                            RequestBody body = RequestBody.create(mediaType, sxx);
+                            JSONObject obj = new JSONObject();
+                            obj.put("code", code);
+
+                            String json=obj.toString();
+
+                            RequestBody body = RequestBody.create(JSON, json); // new
                             Request request = new Request.Builder()
                                     .url(postRequestURL)
-                                    .method("POST", body)
-                                    .addHeader("Content-Type", "application/json")
+                                    .post(body)
                                     .build();
-                            try {
-                                Response response = client.newCall(request).execute();
-                                String answer=response.body().string();
-                                result.setText(answer);
-
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
+                            Response response = client.newCall(request).execute();
+                            String str = response.body().string();
+                            result.setText(str);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -100,6 +103,7 @@ public class newCodeRunOutput extends AppCompatActivity {
     }
 }
 
+/*
 class JsonConverter {
     private String code;
     JsonConverter(String code) { this.code = code;}
@@ -152,4 +156,4 @@ class JsonConverter {
 
     //Remove this function
 
-}
+}*/
