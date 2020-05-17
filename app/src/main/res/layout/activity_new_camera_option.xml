@@ -4,60 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newCameraOption">
+    android:background="@drawable/dormeas"
+    tools:context=".newCameraOption"><![CDATA[
+
+    />
+
+
+
+
+
+    />
+
+
+
+    ]]>
 
     <Button
         android:id="@+id/openCamera"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_width="238dp"
+        android:layout_height="110dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="132dp"
-        android:layout_marginLeft="132dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginBottom="666dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/buttonshape"
+
+
+        android:fallbackLineSpacing="true"
         android:text="Open Camera"
-        android:textColor="@android:color/black"
-        android:textSize="20dp" />
+
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="@font/berkshire_swash" />
 
     <Button
         android:id="@+id/viewCode"
-        android:layout_width="147dp"
-        android:layout_height="70dp"
+        android:layout_width="238dp"
+        android:layout_height="110dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="134dp"
-        android:layout_marginLeft="134dp"
-        android:layout_marginTop="318dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="331dp"
+        android:background="@drawable/buttonshape"
+
+        android:fallbackLineSpacing="true"
         android:text="View Code"
-        android:textColor="@android:color/black"
-        android:textSize="20dp" />
+
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="@font/berkshire_swash" /><![CDATA[
+
+    />
+
+    ]]>
 
     <Button
         android:id="@+id/runCode"
-        android:layout_width="176dp"
-        android:layout_height="69dp"
+        android:layout_width="238dp"
+        android:layout_height="110dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="531dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginRight="110dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="483dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:background="@drawable/buttonshape"
+
+
+        android:fallbackLineSpacing="true"
         android:text="Run Code"
-        android:textColor="@android:color/black"
-        android:textSize="20dp" />
+
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="@font/berkshire_swash" />
 
     <TextView
         android:id="@+id/codepreview"
-        android:layout_width="382dp"
-        android:layout_height="117dp"
+        android:layout_width="378dp"
+        android:layout_height="152dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"

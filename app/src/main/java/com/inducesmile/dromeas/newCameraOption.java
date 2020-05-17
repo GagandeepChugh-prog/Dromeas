@@ -31,6 +31,7 @@ public class newCameraOption extends AppCompatActivity {
         codepreview=findViewById(R.id.codepreview);
 
         viewCode.setEnabled(false);
+        runCode.setEnabled(false);
 
         openCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +78,7 @@ public class newCameraOption extends AppCompatActivity {
                         openCamera.setText("Add More Photos");
                         code=code+cx;
                         viewCode.setEnabled(true);
+                        runCode.setEnabled(true);
 
                     }
                     else{

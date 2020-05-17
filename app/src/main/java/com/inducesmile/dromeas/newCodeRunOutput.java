@@ -34,6 +34,8 @@ public class newCodeRunOutput extends AppCompatActivity {
     TextView result;
 
     String postRequestURL="";
+
+    String code="";
     //String sxx;
 
     @Override
@@ -41,12 +43,12 @@ public class newCodeRunOutput extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_code_run_output);
 
-        postCode=findViewById(R.id.postCode);
+        //postCode=findViewById(R.id.postCode);
         result=findViewById(R.id.result);
 
         Intent intent=getIntent();
         String num=intent.getStringExtra("language");
-        final String code=intent.getStringExtra("code");
+        code=intent.getStringExtra("code");
        // JsonConverter sa=new JsonConverter(code);
        // JSONObject sx= sa.convert();
       //  sxx= sx.toString();
@@ -55,51 +57,51 @@ public class newCodeRunOutput extends AppCompatActivity {
         switch (num){
             case "1":
                 postRequestURL="http://"+changeURL+"/api/run/c";
-
+                runCode();
                 break;
 
             case "2":
                 postRequestURL="http://"+changeURL+"/api/run/c++";
+                runCode();
                 break;
 
             case "3":
                 postRequestURL="http://"+changeURL+"/api/run/js";
+                runCode();
                 break;
         }
 
 
-        postCode.setOnClickListener(new View.OnClickListener() {
+
+    }
+
+    private void runCode() {
+
+        Thread thread = new Thread(new Runnable() {
+
             @Override
-            public void onClick(View view) {
+            public void run() {
+                try  {
+                    JSONObject obj = new JSONObject();
+                    obj.put("code", code);
 
+                    String json=obj.toString();
 
-                 Thread thread = new Thread(new Runnable() {
-
-                    @Override
-                    public void run() {
-                        try  {
-                            JSONObject obj = new JSONObject();
-                            obj.put("code", code);
-
-                            String json=obj.toString();
-
-                            RequestBody body = RequestBody.create(JSON, json); // new
-                            Request request = new Request.Builder()
-                                    .url(postRequestURL)
-                                    .post(body)
-                                    .build();
-                            Response response = client.newCall(request).execute();
-                            String str = response.body().string();
-                            result.setText(str);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-
-                thread.start();
+                    RequestBody body = RequestBody.create(JSON, json); // new
+                    Request request = new Request.Builder()
+                            .url(postRequestURL)
+                            .post(body)
+                            .build();
+                    Response response = client.newCall(request).execute();
+                    String str = response.body().string();
+                    result.setText(str);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
+
+        thread.start();
     }
 }
 

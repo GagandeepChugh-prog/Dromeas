@@ -9,20 +9,14 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="281dp"
-        android:layout_height="178dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginRight="126dp"
-        android:layout_marginBottom="664dp"
         android:paddingTop="5dp"
 
         android:text="NOTEPAD"
@@ -33,7 +27,7 @@
     <EditText
         android:id="@+id/addcode"
         android:layout_width="match_parent"
-        android:layout_height="680dp"
+        android:layout_height="640dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -56,15 +50,22 @@
 
     <Button
         android:id="@+id/notepadRun"
-        android:layout_width="102dp"
-        android:layout_height="59dp"
+        android:layout_width="143dp"
+        android:layout_height="67dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="158dp"
-        android:layout_marginLeft="158dp"
-        android:layout_marginTop="766dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="737dp"
+        android:background="@drawable/buttonshape"
+
+
+        android:fallbackLineSpacing="true"
         android:text="Run"
-        android:textColor="@android:color/black"
-        android:textSize="20dp" />
+
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="@font/berkshire_swash" />
 </RelativeLayout>
