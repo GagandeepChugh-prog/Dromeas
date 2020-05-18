@@ -29,7 +29,7 @@ public class newCodeRunOutput extends AppCompatActivity {
 
     Button postCode;
 
-    String changeURL="a5cdce3d.ngrok.io";
+    String changeURL="28816b3b.ngrok.io";
 
     TextView result;
 
@@ -67,6 +67,14 @@ public class newCodeRunOutput extends AppCompatActivity {
 
             case "3":
                 postRequestURL="http://"+changeURL+"/api/run/js";
+                runCode();
+                break;
+            case "4":
+                postRequestURL="http://"+changeURL+"/api/run/php";
+                runCode();
+                break;
+            case "5":
+                postRequestURL="http://"+changeURL+"/api/run/ruby";
                 runCode();
                 break;
         }
