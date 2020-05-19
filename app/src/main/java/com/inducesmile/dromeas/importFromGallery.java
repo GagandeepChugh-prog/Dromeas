@@ -208,6 +208,8 @@ public class importFromGallery extends AppCompatActivity {
 
                         //  codePreview.setText(sb.toString());
                         code=code + sb.toString();
+
+                        getimage.setText("Add More Images");
                         runCodeFromGallary.setEnabled(true);
 
                     }
