@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.squareup.okhttp.MediaType;
@@ -27,15 +28,17 @@ public class newCodeRunOutput extends AppCompatActivity {
 
     OkHttpClient client = new OkHttpClient();
 
-    Button postCode;
+    Button newUrl;
 
-    String changeURL="28816b3b.ngrok.io";
+    String changeURL;
 
     TextView result;
 
     String postRequestURL="";
+    EditText urlText;
 
     String code="";
+    String num="";
     //String sxx;
 
     @Override
@@ -43,42 +46,47 @@ public class newCodeRunOutput extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_code_run_output);
 
-        //postCode=findViewById(R.id.postCode);
+        newUrl=findViewById(R.id.newUrl);
         result=findViewById(R.id.result);
-
+        urlText=findViewById(R.id.urlText);
         Intent intent=getIntent();
-        String num=intent.getStringExtra("language");
+        num=intent.getStringExtra("language");
         code=intent.getStringExtra("code");
        // JsonConverter sa=new JsonConverter(code);
        // JSONObject sx= sa.convert();
       //  sxx= sx.toString();
 
 
-        switch (num){
-            case "1":
-                postRequestURL="http://"+changeURL+"/api/run/c";
-                runCode();
-                break;
+        newUrl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeURL=urlText.getText().toString();
+                switch (num){
+                    case "1":
+                        postRequestURL="http://"+changeURL+"/api/run/c";
+                        runCode();
+                        break;
 
-            case "2":
-                postRequestURL="http://"+changeURL+"/api/run/c++";
-                runCode();
-                break;
+                    case "2":
+                        postRequestURL="http://"+changeURL+"/api/run/c++";
+                        runCode();
+                        break;
 
-            case "3":
-                postRequestURL="http://"+changeURL+"/api/run/js";
-                runCode();
-                break;
-            case "4":
-                postRequestURL="http://"+changeURL+"/api/run/php";
-                runCode();
-                break;
-            case "5":
-                postRequestURL="http://"+changeURL+"/api/run/ruby";
-                runCode();
-                break;
-        }
-
+                    case "3":
+                        postRequestURL="http://"+changeURL+"/api/run/js";
+                        runCode();
+                        break;
+                    case "4":
+                        postRequestURL="http://"+changeURL+"/api/run/php";
+                        runCode();
+                        break;
+                    case "5":
+                        postRequestURL="http://"+changeURL+"/api/run/ruby";
+                        runCode();
+                        break;
+                }
+            }
+        });
 
 
     }
