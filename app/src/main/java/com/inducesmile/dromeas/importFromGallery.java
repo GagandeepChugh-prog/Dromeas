@@ -207,7 +207,7 @@ public class importFromGallery extends AppCompatActivity {
 
 
                         //  codePreview.setText(sb.toString());
-                        code=sb.toString();
+                        code=code + sb.toString();
                         runCodeFromGallary.setEnabled(true);
 
                     }
