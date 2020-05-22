@@ -22,7 +22,7 @@
         android:text="NOTEPAD"
         android:textColor="#E91E63"
         android:textSize="50dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
     <EditText
         android:id="@+id/addcode"
@@ -67,5 +67,5 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 </RelativeLayout>

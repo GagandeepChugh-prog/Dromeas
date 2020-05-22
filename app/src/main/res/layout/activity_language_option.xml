@@ -27,21 +27,21 @@
 
     <Button
         android:id="@+id/bt2"
-        android:layout_width="305dp"
-        android:layout_height="59dp"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginLeft="58dp"
-        android:layout_marginTop="359dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="356dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="C++"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
     <Button
         android:id="@+id/bt3"
@@ -52,32 +52,14 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="67dp"
         android:layout_marginLeft="67dp"
-        android:layout_marginTop="428dp"
+        android:layout_marginTop="436dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="JAVASCRIPT"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
-
-    <Button
-        android:id="@+id/bt4"
-        android:layout_width="295dp"
-        android:layout_height="65dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginTop="511dp"
-        android:background="@drawable/buttonshape"
-        android:fallbackLineSpacing="true"
-        android:text="PHP"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
     <Button
         android:id="@+id/bt5"
@@ -88,14 +70,32 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="67dp"
         android:layout_marginLeft="67dp"
-        android:layout_marginTop="588dp"
+        android:layout_marginTop="596dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="RUBY"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="519dp"
+        android:background="@drawable/buttonshape"
+        android:fallbackLineSpacing="true"
+        android:text="PHP"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="@font/open_sans_bold" />
 
     <TextView
         android:id="@+id/textView4"
@@ -117,7 +117,7 @@
         android:text="LANGUAGE"
         android:textColor="#E91E63"
         android:textSize="50dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
     <TextView
         android:id="@+id/textView3"
@@ -139,6 +139,6 @@
         android:text="SELECT"
         android:textColor="#E91E63"
         android:textSize="50dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
 </RelativeLayout>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class importFromNotePad extends AppCompatActivity {
 
@@ -27,9 +28,13 @@ public class importFromNotePad extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(importFromNotePad.this,newCodeRunOutput.class);
-                intent.putExtra("code",addcode.getText());
-                intent.putExtra("language",lang);
-                startActivity(intent);
+                if(addcode.getText().toString().length()>0) {
+                    intent.putExtra("code", addcode.getText().toString());
+                    intent.putExtra("language", lang);
+                    startActivity(intent);
+                }
+                else
+                    Toast.makeText(importFromNotePad.this, "Please Enter The Code", Toast.LENGTH_SHORT).show();
             }
         });
     }

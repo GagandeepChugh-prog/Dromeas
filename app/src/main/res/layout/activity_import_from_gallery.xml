@@ -39,7 +39,7 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
     <Button
         android:id="@+id/openEditor"
@@ -57,7 +57,7 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
     <Button
         android:id="@+id/runCodeFromGallary"
@@ -71,11 +71,11 @@
         android:layout_marginTop="702dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
-        android:text="Run Code"
+        android:text="RUN CODE"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
 
 </RelativeLayout>

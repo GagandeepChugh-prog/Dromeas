@@ -38,7 +38,17 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" /><![CDATA[
+
+
+
+    />
+
+
+
+
+
+    ]]>
 
     <Button
         android:id="@+id/viewCode"
@@ -47,9 +57,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="81dp"
-        android:layout_marginLeft="81dp"
-        android:layout_marginTop="331dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="325dp"
         android:background="@drawable/buttonshape"
 
         android:fallbackLineSpacing="true"
@@ -58,11 +68,7 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" /><![CDATA[
-
-    />
-
-    ]]>
+        app:fontFamily="@font/open_sans_bold" />
 
     <Button
         android:id="@+id/runCode"
@@ -73,11 +79,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="87dp"
-        android:layout_marginLeft="87dp"
-        android:layout_marginTop="483dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginRight="106dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginRight="98dp"
         android:background="@drawable/buttonshape"
 
 
@@ -87,7 +93,7 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 
     <TextView
         android:id="@+id/codepreview"

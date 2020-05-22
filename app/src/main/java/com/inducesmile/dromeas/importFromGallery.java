@@ -63,6 +63,7 @@ public class importFromGallery extends AppCompatActivity {
         runCodeFromGallary=findViewById(R.id.runCodeFromGallary);
 
         runCodeFromGallary.setEnabled(false);
+        openEditor.setEnabled(false);
 
         Intent intent=getIntent();
         final String lang=intent.getStringExtra("language");
@@ -211,6 +212,7 @@ public class importFromGallery extends AppCompatActivity {
 
                         getimage.setText("Add More Images");
                         runCodeFromGallary.setEnabled(true);
+                        openEditor.setEnabled(true);
 
                     }
 

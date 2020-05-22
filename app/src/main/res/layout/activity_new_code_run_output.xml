@@ -54,5 +54,5 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
+        app:fontFamily="@font/open_sans_bold" />
 </RelativeLayout>

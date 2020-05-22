@@ -30,7 +30,7 @@ public class newCodeRunOutput extends AppCompatActivity {
 
     Button newUrl;
 
-    String changeURL;
+    String changeURL="1275bc37";    //incase just add the starting number before .ngrok.io;
 
     TextView result;
 
@@ -60,28 +60,28 @@ public class newCodeRunOutput extends AppCompatActivity {
         newUrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeURL=urlText.getText().toString();
+              //  changeURL=urlText.getText().toString();
                 switch (num){
                     case "1":
-                        postRequestURL="http://"+changeURL+"/api/run/c";
+                        postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/c";
                         runCode();
                         break;
 
                     case "2":
-                        postRequestURL="http://"+changeURL+"/api/run/c++";
+                        postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/cpp";
                         runCode();
                         break;
 
                     case "3":
-                        postRequestURL="http://"+changeURL+"/api/run/js";
+                        postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/js";
                         runCode();
                         break;
                     case "4":
-                        postRequestURL="http://"+changeURL+"/api/run/php";
+                        postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/php";
                         runCode();
                         break;
                     case "5":
-                        postRequestURL="http://"+changeURL+"/api/run/ruby";
+                        postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/ruby";
                         runCode();
                         break;
                 }
@@ -110,7 +110,9 @@ public class newCodeRunOutput extends AppCompatActivity {
                             .build();
                     Response response = client.newCall(request).execute();
                     String str = response.body().string();
-                    result.setText(str);
+                    str=str.substring(11);
+                    str=str.substring(0,str.length()-2);
+                    result.setText("Output :- "+str);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

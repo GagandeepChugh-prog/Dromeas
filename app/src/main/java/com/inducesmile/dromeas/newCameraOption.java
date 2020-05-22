@@ -84,7 +84,7 @@ public class newCameraOption extends AppCompatActivity {
                     else{
                         Toast.makeText(getApplicationContext(),"No code detected",Toast.LENGTH_LONG).show();
                     }
-                    codepreview.setText(returnValue);
+                 //   codepreview.setText(returnValue);
                 }
                 break;
             }
@@ -94,7 +94,7 @@ public class newCameraOption extends AppCompatActivity {
                     // TODO Extract the data returned from the child Activity.
                     String returnValue = data.getStringExtra("accessedData");
                     code =returnValue;
-                    codepreview.setText(returnValue);
+                //    codepreview.setText(returnValue);
                 }
                 break;
             }
