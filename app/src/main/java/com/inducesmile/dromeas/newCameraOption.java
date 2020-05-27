@@ -75,7 +75,7 @@ public class newCameraOption extends AppCompatActivity {
                     String cx=returnValue;
 
                     if(cx.length()>0){
-                        openCamera.setText("Add More Photos");
+                        openCamera.setText("ADD MORE PHOTOS");
                         code=code+cx;
                         viewCode.setEnabled(true);
                         runCode.setEnabled(true);

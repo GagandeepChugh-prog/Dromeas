@@ -210,7 +210,7 @@ public class importFromGallery extends AppCompatActivity {
                         //  codePreview.setText(sb.toString());
                         code=code + sb.toString();
 
-                        getimage.setText("Add More Images");
+                        getimage.setText("ADD MORE IMAGES");
                         runCodeFromGallary.setEnabled(true);
                         openEditor.setEnabled(true);
 

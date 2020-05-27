@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dormeas"
+    android:background="@drawable/p"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="355dp"
+        android:layout_height="234dp"
         android:gravity="center"
 
-        android:text="CLICK COMPILE AND RUN"
-        android:textColor="#E91E63"
-        android:textSize="57sp"
+        android:text="CLICK COMPILE RUN"
+        android:textColor="#BD2121"
+        android:textSize="62sp"
         android:textStyle="bold"
-        app:fontFamily="@font/open_sans_bold"
+        app:fontFamily="@font/macondo_swash_caps"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.43" />
 </androidx.constraintlayout.widget.ConstraintLayout>

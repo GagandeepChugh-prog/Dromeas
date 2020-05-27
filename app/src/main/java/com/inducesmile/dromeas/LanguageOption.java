@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LanguageOption extends AppCompatActivity {
+    public class LanguageOption extends AppCompatActivity {
 
     Button b1,b2,b3,b4,b5;
 

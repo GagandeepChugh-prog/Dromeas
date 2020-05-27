@@ -6,76 +6,79 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@drawable/dormeas"
+    android:background="@drawable/p"
 
     tools:context=".importFromGallery">
 
     <ImageView
         android:id="@+id/galleryimage"
-        android:layout_width="399dp"
+        android:layout_width="422dp"
         android:layout_height="429dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_image_black_24dp" />
 
     <Button
         android:id="@+id/getimage"
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
+        android:layout_width="291dp"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="485dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="462dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="CHOOSE IMAGE"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#BD2121"
         android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
-
-    <Button
-        android:id="@+id/openEditor"
-        android:layout_width="match_parent"
-        android:layout_height="92dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginLeft="-2dp"
-        android:layout_marginTop="593dp"
-        android:background="@drawable/buttonshape"
-        android:fallbackLineSpacing="true"
-        android:text="OPEN EDITOR"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
     <Button
         android:id="@+id/runCodeFromGallary"
-        android:layout_width="match_parent"
-        android:layout_height="92dp"
+        android:layout_width="291dp"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="702dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="623dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="RUN CODE"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#BD2121"
         android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
+
+    <Button
+        android:id="@+id/openEditor"
+        android:layout_width="291dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="544dp"
+        android:background="@drawable/buttonshape"
+        android:fallbackLineSpacing="true"
+        android:text="OPEN EDITOR"
+        android:textAllCaps="false"
+        android:textColor="#BD2121"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
 
 </RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dormeas"
+    android:background="@drawable/p"
     tools:context=".importFromNotePad">
 
     <TextView
@@ -20,9 +20,10 @@
         android:paddingTop="5dp"
 
         android:text="NOTEPAD"
-        android:textColor="#E91E63"
+        android:textColor="#BD2121"
         android:textSize="50dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
     <EditText
         android:id="@+id/addcode"
@@ -38,13 +39,13 @@
         android:layout_marginTop="83dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:background="#FFFFFF"
+        android:background="#000000"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Write your code here"
         android:inputType="textMultiLine"
         android:padding="15dp"
-        android:textColor="#050505"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
         app:fontFamily="@font/asul" />
 
@@ -65,7 +66,8 @@
         android:text="Run"
 
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#BD2121"
         android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 </RelativeLayout>

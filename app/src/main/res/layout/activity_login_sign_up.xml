@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p"
+    tools:context=".LoginSignUpActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="355dp"
+        android:layout_height="234dp"
+        android:gravity="center"
+
+        android:text="CLICK COMPILE RUN"
+        android:textColor="#BD2121"
+        android:textSize="62sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/Loginbt"
+        android:layout_width="213dp"
+        android:layout_height="59dp"
+        android:background="#00F74848"
+        android:fontFamily="@font/macondo_swash_caps"
+        android:text="LOGIN"
+        android:textColor="#BD2121"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/SignUpbt"
+        android:layout_width="198dp"
+        android:layout_height="56dp"
+        android:background="#00F74848"
+        android:fontFamily="@font/macondo_swash_caps"
+        android:text="SIGN UP"
+        android:textColor="#BD2121"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dormeas"
+    android:background="@drawable/p"
     tools:context=".CommonLanding">
 
     <TextView
@@ -25,9 +25,10 @@
         android:layout_marginBottom="568dp"
 
         android:text="CODE"
-        android:textColor="#E91E63"
+        android:textColor="#BD2121"
         android:textSize="50dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
     <TextView
         android:id="@+id/textView2"
@@ -47,63 +48,67 @@
         android:layout_marginBottom="623dp"
 
         android:text="IMPORT"
-        android:textColor="#E91E63"
+        android:textColor="#BD2121"
         android:textSize="50dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
     <Button
         android:id="@+id/camera"
-        android:layout_width="303dp"
-        android:layout_height="145dp"
+        android:layout_width="291dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/buttonshape"
+        android:fallbackLineSpacing="true"
+        android:text="CAMERA"
+        android:textAllCaps="false"
+        android:textColor="#BD2121"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="291dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="468dp"
+        android:background="@drawable/buttonshape"
+        android:fallbackLineSpacing="true"
+        android:text="GALLERY"
+        android:textAllCaps="false"
+        android:textColor="#BD2121"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
+
+    <Button
+        android:id="@+id/notepad"
+        android:layout_width="291dp"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
-        android:layout_marginTop="282dp"
-        android:background="@drawable/buttonshape"
-        android:fallbackLineSpacing="true"
-        android:text="CAMERA"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
-
-    <Button
-        android:id="@+id/notepad"
-        android:layout_width="303dp"
-        android:layout_height="145dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="371dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="NOTEPAD"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#BD2121"
         android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
-
-    <Button
-        android:id="@+id/gallery"
-        android:layout_width="303dp"
-        android:layout_height="145dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="615dp"
-        android:background="@drawable/buttonshape"
-        android:fallbackLineSpacing="true"
-        android:text="GALLERY"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
 
 </RelativeLayout>

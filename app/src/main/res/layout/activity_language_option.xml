@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dormeas"
+    android:background="@drawable/p"
     tools:context=".LanguageOption">
 
     <Button
@@ -14,52 +14,17 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
         android:layout_marginTop="282dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="C"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#BD2121"
         android:textSize="20dp"
-        app:fontFamily="@font/berkshire_swash" />
-
-    <Button
-        android:id="@+id/bt2"
-        android:layout_width="295dp"
-        android:layout_height="65dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="356dp"
-        android:background="@drawable/buttonshape"
-        android:fallbackLineSpacing="true"
-        android:text="C++"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
-
-    <Button
-        android:id="@+id/bt3"
-        android:layout_width="295dp"
-        android:layout_height="65dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginTop="436dp"
-        android:background="@drawable/buttonshape"
-        android:fallbackLineSpacing="true"
-        android:text="JAVASCRIPT"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
     <Button
         android:id="@+id/bt5"
@@ -68,16 +33,17 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
         android:layout_marginTop="596dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="RUBY"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#BD2121"
         android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
     <Button
         android:id="@+id/bt4"
@@ -86,38 +52,55 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
         android:layout_marginTop="519dp"
         android:background="@drawable/buttonshape"
         android:fallbackLineSpacing="true"
         android:text="PHP"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#BD2121"
         android:textSize="20dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="310dp"
-        android:layout_height="161dp"
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="436dp"
+        android:background="@drawable/buttonshape"
+        android:fallbackLineSpacing="true"
+        android:text="JAVASCRIPT"
+        android:textAllCaps="false"
+        android:textColor="#BD2121"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="59dp"
         android:layout_marginLeft="59dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginRight="42dp"
-        android:layout_marginBottom="573dp"
-
-        android:text="LANGUAGE"
-        android:textColor="#E91E63"
-        android:textSize="50dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:layout_marginTop="356dp"
+        android:background="@drawable/buttonshape"
+        android:fallbackLineSpacing="true"
+        android:text="C++"
+        android:textAllCaps="false"
+        android:textColor="#BD2121"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
     <TextView
         android:id="@+id/textView3"
@@ -129,16 +112,40 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="110dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="623dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="610dp"
 
         android:text="SELECT"
-        android:textColor="#E91E63"
+        android:textColor="#BD2121"
         android:textSize="50dp"
-        app:fontFamily="@font/open_sans_bold" />
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="310dp"
+        android:layout_height="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="560dp"
+
+        android:text="LANGUAGE"
+        android:textColor="#BD2121"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/macondo_swash_caps" />
 
 </RelativeLayout>
