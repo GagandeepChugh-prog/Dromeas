@@ -56,7 +56,7 @@ public class newCodeRunOutput extends AppCompatActivity {
        // JSONObject sx= sa.convert();
       //  sxx= sx.toString();
 
-
+/*
         newUrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +86,32 @@ public class newCodeRunOutput extends AppCompatActivity {
                         break;
                 }
             }
-        });
+        });*/
+
+        switch (num){
+            case "1":
+                postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/c";
+                runCode();
+                break;
+
+            case "2":
+                postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/cpp";
+                runCode();
+                break;
+
+            case "3":
+                postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/js";
+                runCode();
+                break;
+            case "4":
+                postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/php";
+                runCode();
+                break;
+            case "5":
+                postRequestURL="http://"+changeURL+".ngrok.io"+"/api/run/ruby";
+                runCode();
+                break;
+        }
 
 
     }
