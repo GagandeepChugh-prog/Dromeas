@@ -46,9 +46,9 @@ public class newCodeRunOutput extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_code_run_output);
 
-        newUrl=findViewById(R.id.newUrl);
+       // newUrl=findViewById(R.id.newUrl);
         result=findViewById(R.id.result);
-        urlText=findViewById(R.id.urlText);
+        //urlText=findViewById(R.id.urlText);
         Intent intent=getIntent();
         num=intent.getStringExtra("language");
         code=intent.getStringExtra("code");
