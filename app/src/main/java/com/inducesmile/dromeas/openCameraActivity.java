@@ -161,6 +161,11 @@ public class openCameraActivity extends AppCompatActivity {
                 Toast.makeText(this,""+error, Toast.LENGTH_LONG).show();
             }
         }
+
+        if (resultCode == 0){
+            fireBackActivity();
+        }
+
     }
 
     private void fireBackActivity() {

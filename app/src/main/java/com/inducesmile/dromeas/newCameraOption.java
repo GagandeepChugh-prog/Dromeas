@@ -68,7 +68,7 @@ public class newCameraOption extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch(requestCode) {
-            case (2) : {
+            case 2 : {
                 if (resultCode == openCameraActivity.RESULT_OK) {
                     // TODO Extract the data returned from the child Activity.
                     String returnValue = data.getStringExtra("accessedData");
@@ -98,6 +98,8 @@ public class newCameraOption extends AppCompatActivity {
                 }
                 break;
             }
+
+
 
         }
     }
