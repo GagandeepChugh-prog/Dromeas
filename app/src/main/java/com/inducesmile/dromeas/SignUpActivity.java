@@ -37,7 +37,7 @@ public class SignUpActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
                 if(user!=null){
-                    Intent intent=new Intent(SignUpActivity.this,CommonLanding.class);
+                    Intent intent=new Intent(SignUpActivity.this,LanguageOption.class);
                     startActivity(intent);
                     finish();
                     return;
